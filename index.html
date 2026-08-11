@@ -1,108 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Python Programs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Python Portfolio | Harshini</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            text-align: center;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 40px;
+            padding: 0;
         }
 
-        h1 {
-            color: #306998;
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1e293b;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #306998, #4b8bbe);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 45px 0 25px;
+            font-size: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .card {
             background: white;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px #ccc;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: 0.3s;
         }
 
-        a {
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .button {
             display: inline-block;
+            padding: 10px 20px;
             background: #306998;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
 
-        a:hover {
+        .button:hover {
             background: #1f4e79;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: #1e293b;
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+    <h1>🐍 Python Portfolio</h1>
+    <p>Harshini Jegatheeswaran</p>
+    <p>Python Programs • Data Structures • Mini Projects</p>
+</header>
+
 <div class="container">
 
-    <h1>🐍 Python Programs</h1>
+    <h2 class="section-title">📚 Data Structures</h2>
 
-    <p>My Python Programs and Data Structure Implementations</p>
+    <div class="projects">
 
-    <div class="card">
-        <h2>📚 Book Stack</h2>
-        <a href="BookStack.py">View Code</a>
+        <div class="card">
+            <h3>📚 Book Stack</h3>
+            <p>Implementation of Stack using Python.</p>
+            <a class="button" href="BookStack.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>📦 Stack</h3>
+            <p>Basic stack data structure implementation.</p>
+            <a class="button" href="Stack.py">View Code</a>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h2>🚗 Car Parking System</h2>
-        <a href="Car%20Parking%20System.py">View Code</a>
+
+    <h2 class="section-title">🔗 Linked List Operations</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>➕ Insertion at Beginning</h3>
+            <p>Insert a node at the beginning.</p>
+            <a class="button" href="Insertionbegin.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>➕ Insertion at Middle</h3>
+            <p>Insert a node at a specific position.</p>
+            <a class="button" href="Insertion_middle.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>➕ Insertion at End</h3>
+            <p>Insert a node at the end.</p>
+            <a class="button" href="Insertion_end.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>❌ Deletion at Beginning</h3>
+            <p>Delete the first node.</p>
+            <a class="button" href="Delection_begin.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>❌ Deletion at Middle</h3>
+            <p>Delete a node from the middle.</p>
+            <a class="button" href="Delection_middle.py">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>❌ Deletion at End</h3>
+            <p>Delete the last node.</p>
+            <a class="button" href="Deletion_end.py">View Code</a>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h2>📦 Stack</h2>
-        <a href="Stack.py">View Code</a>
-    </div>
 
-    <div class="card">
-        <h2>🚦 Traffic Management</h2>
-        <a href="Traffic.py">View Code</a>
-    </div>
+    <h2 class="section-title">🚀 Mini Projects</h2>
 
-    <div class="card">
-        <h2>➕ Insertion at Beginning</h2>
-        <a href="Insertionbegin.py">View Code</a>
-    </div>
+    <div class="projects">
 
-    <div class="card">
-        <h2>➕ Insertion at Middle</h2>
-        <a href="Insertion_middle.py">View Code</a>
-    </div>
+        <div class="card">
+            <h3>🚗 Car Parking System</h3>
+            <p>A Python-based parking management program.</p>
+            <a class="button" href="Car%20Parking%20System.py">View Code</a>
+        </div>
 
-    <div class="card">
-        <h2>➕ Insertion at End</h2>
-        <a href="Insertion_end.py">View Code</a>
-    </div>
+        <div class="card">
+            <h3>🚦 Traffic Management</h3>
+            <p>Python program related to traffic management.</p>
+            <a class="button" href="Traffic.py">View Code</a>
+        </div>
 
-    <div class="card">
-        <h2>❌ Deletion at Beginning</h2>
-        <a href="Delection_begin.py">View Code</a>
-    </div>
-
-    <div class="card">
-        <h2>❌ Deletion at Middle</h2>
-        <a href="Delection_middle.py">View Code</a>
-    </div>
-
-    <div class="card">
-        <h2>❌ Deletion at End</h2>
-        <a href="Deletion_end.py">View Code</a>
     </div>
 
 </div>
+
+<footer>
+    <p>© 2026 Harshini Jegatheeswaran | Built with Python & GitHub Pages 🐍</p>
+</footer>
 
 </body>
 </html>
